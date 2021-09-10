@@ -46,6 +46,17 @@ sudo mdutil -i off -a
 sudo defaults write /Library/Preferences/com.apple.loginwindow DesktopPicture ""
 ```
 
+## Reduce Motion & Transparency
+
+```bash
+defaults write com.apple.Accessibility DifferentiateWithoutColor -int 1
+defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
+defaults write com.apple.universalaccess reduceMotion -int 1
+defaults write com.apple.universalaccess reduceTransparency -int 1
+defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
+```
+
+
 ## Enable multi-sessions
 
 ```bash
