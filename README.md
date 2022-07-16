@@ -29,7 +29,7 @@ defaults write com.apple.loginwindow autoLoginUser -bool true
 
 User accounts and root/administrator have different `defaults`
 
-## Disable spotlight indexing on macOS to heavily speed up Virual Instances.
+## Disable spotlight indexing on macOS to heavily speed up Virtual Instances.
 
 ```bash
 # massively increase virtualized macOS by disabling spotlight.
