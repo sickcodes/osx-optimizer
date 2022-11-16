@@ -27,7 +27,7 @@ Flags:
 Insecure options:
     --passwd <string>    Give everyone this password
 
-EXTREMELEY Insecure options:
+EXTREMELY insecure options:
     --disable-passwords  Disable passwords globally
     --all-sudoers        Make everyone super user (sudoer)
 
