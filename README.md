@@ -163,7 +163,14 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
     -allowAccessFor -allUsers
 ```
 
+## Connect WiFi to strongest Access Point
+Make WiFi stay connected to the strongest(usually closest) AP avaliable.
 
+MacOS did not specify this behavior by default.
+
+```bash
+sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport prefs JoinMode=Strongest
+```
 
 
 
