@@ -70,7 +70,6 @@ defaults write com.apple.Accessibility DifferentiateWithoutColor -int 1
 defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
 defaults write com.apple.universalaccess reduceMotion -int 1
 defaults write com.apple.universalaccess reduceTransparency -int 1
-defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
 ```
 
 
