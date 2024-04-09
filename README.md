@@ -162,17 +162,6 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
     -allowAccessFor -allUsers
 ```
 
-## Connect WiFi to strongest Access Point
-Make WiFi stay connected to the strongest(usually closest) AP avaliable.
-
-MacOS did not specify this behavior by default.
-
-```bash
-sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport prefs JoinMode=Strongest
-```
-
-
-
 # EXTREMELY INSECURE METHODS (at your own risk!)
 
 These macOS optimizations should only be used in CI/CD, behind a VPN, and with no external connectivity.
@@ -238,4 +227,17 @@ sudo -u "${REAL_NAME}" sudo defaults write NSGlobalDomain NSAppSleepDisabled -bo
 ```
 
 
+# Deprecated
+
+## Connect WiFi to strongest Access Point
+This has been deprecated since MacOS 12.7.4, 13.6.5, and 14.4. Due to the removal of the airport command line tool.
+For more info, see [this reddit post](https://old.reddit.com/r/MacOS/comments/1bjjchk/rip_airport_cli_macos_sonoma_144_removes_the) and [CVE-2024-23227](https://nvd.nist.gov/vuln/detail/CVE-2024-23227).
+
+Make WiFi stay connected to the strongest(usually closest) AP avaliable.
+
+MacOS did not specify this behavior by default.
+
+```bash
+sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport prefs JoinMode=Strongest
+```
 
