@@ -35,7 +35,7 @@ User accounts and root/administrator have different `defaults`
 # massively increase virtualized macOS by disabling spotlight.
 sudo mdutil -i off -a
 
-# since you can't use spotlight to find apps, you can renable with
+# since you can't use spotlight to find apps, you can re-enable with
 # sudo mdutil -i on -a
 
 ```
@@ -163,7 +163,7 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 ```
 
 ## Connect WiFi to strongest Access Point
-Make WiFi stay connected to the strongest(usually closest) AP avaliable.
+Make WiFi stay connected to the strongest (usually closest) AP available.
 
 MacOS did not specify this behavior by default.
 
